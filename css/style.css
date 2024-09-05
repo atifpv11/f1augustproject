@@ -1,0 +1,229 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1c19;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+header {
+    align-items: flex-start;
+    background: #1a1c19;
+    border: 1px solid #e0d6c2;
+    border-radius: 50px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 56px;
+    justify-content: space-between;
+    padding: 3px;
+    margin: 10px;
+    display: flex;
+}
+
+
+
+nav li {
+    display: inline;
+}
+
+
+
+.rest {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #1a1c19;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    border: 1px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ms{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #323025;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    width: 370px;
+    box-sizing: border-box;
+    padding-left: 100px; /* Increase left padding to extend border horizontally */
+  padding-right: 100px;
+  
+}
+.cnt{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #1a1c19;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    border: 1px solid white;
+    margin-left: 500px;
+}
+
+nav .rest:hover {
+    background-color: #b1a592;
+    color:#1a1c19
+}
+nav .cnt:hover{
+    background-color: #b1a592;
+    color: #1a1c19;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card.large {
+    background-color: #dfd3b0;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card.medium {
+    background-color: #91946b;
+    grid-column: span 1;
+}
+
+.card small {
+    background-color: #a37b5d;
+    grid-column: span 1;
+}
+
+.tag {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    margin: 10px 0;
+    color: #1e1e1e;
+}
+
+p {
+    font-size: 0.9em;
+    margin: 10px 0;
+    color: #e0e0e0;
+}
+
+.extra-info {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #444;
+    color: #e0e0e0;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #666;
+}
+
+.card.large {
+    background-color: #dfd3b0;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card.medium {
+    background-color: #91946b;
+    grid-column: span 1;
+}
+
+.card.small {
+    background-color: #a37b5d;
+    grid-column: span 1;
+}
+
+.tag {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    margin: 10px 0;
+    color: #1e1e1e;
+}
+
+p {
+    font-size: 0.9em;
+    margin: 10px 0;
+    color: #e0e0e0;
+}
+
+.extra-info {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #444;
+    color: #e0e0e0;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #666;
+}
+
+@media (max-width: 768px) {
+    .card.large {
+        grid-column: span 1;
+    }
+}
